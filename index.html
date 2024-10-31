@@ -191,22 +191,19 @@
         }
 
         .update-date {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
+            text-align: center;
+            color: #333;
             font-size: 1.2em;
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 5px 15px;
             border-radius: 20px;
-            z-index: 10;
+            margin-bottom: 20px;
+            grid-column: 1 / -1;
         }
     </style>
 </head>
 <body>
-    <div class="update-date">تاريخ تحديث القوائم: 2024/10/31</div>
     <div class="container">
         <div class="logo-container">
             <img src="image.png" alt="شعار" class="logo">
@@ -220,6 +217,7 @@
             <button class="tab" onclick="showContent('procedures')"><span>إجراءات اللعب</span></button>
         </div>
         <div id="teams" class="content active">
+            <div class="update-date">تاريخ تحديث القوائم: 2024/10/31</div>
             <div class="card">
                 <h3>المجموعة 1</h3>
                 <p>Souki</p>
