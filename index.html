@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player's Guide</title>
+    <title>دليل كرة القدم في الملاعب الصغيرة</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,15 +14,14 @@
         }
 
         body {
-            background: linear-gradient(135deg, #000000 0%, #548dce 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3436 100%);
             margin: 0;
             padding: 20px;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #898caf;
-            position: relative;
+            color: #333;
         }
 
         .container {
@@ -67,7 +66,7 @@
             display: block;
             width: 100px;
             height: 3px;
-            background: linear-gradient(90deg, #4446d4, #3b82f6);
+            background: linear-gradient(90deg, #4ade80, #3b82f6);
             margin: 15px auto;
             border-radius: 2px;
         }
@@ -99,7 +98,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #695be9, #3b82f6);
+            background: linear-gradient(45deg, #4ade80, #3b82f6);
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 1;
@@ -151,7 +150,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, #6eb7fc, #3b82f6);
+            background: linear-gradient(90deg, #4ade80, #3b82f6);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -189,18 +188,6 @@
                 padding: 20px;
             }
         }
-
-        .update-date {
-            text-align: center;
-            color: #333;
-            font-size: 1.2em;
-            font-weight: bold;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            grid-column: 1 / -1;
-        }
     </style>
 </head>
 <body>
@@ -210,23 +197,13 @@
         </div>
         <h1>قوانين ومبادئ و أسس اللعبة</h1>
         <div class="tabs">
-            <button class="tab active" onclick="showContent('Matches')"><span>المباريات</span></button>
-            <button class="tab" onclick="showContent('teams')"><span>الفرق المشاركة</span></button>
+            <button class="tab active" onclick="showContent('teams')"><span>الفرق المشاركة</span></button>
             <button class="tab" onclick="showContent('rules')"><span>القوانين الأساسية</span></button>
             <button class="tab" onclick="showContent('ethics')"><span>المبادئ الأخلاقية</span></button>
             <button class="tab" onclick="showContent('equipment')"><span>المعدات</span></button>
             <button class="tab" onclick="showContent('procedures')"><span>إجراءات اللعب</span></button>
         </div>
-        <div id="Matches" class="content active">
-            <div class="update-date">تاريخ المباريات: 2024/11/01</div>
-            <div class="card">
-                <h3>مبارات اليوم 1</h3>
-                <p>Chouaib VS Minou</p>
-                <p> من 18:00 الى 19:00</p>
-            </div>
-        </div>
-        <div id="teams" class="content">
-            <div class="update-date">تاريخ تحديث القوائم: 2024/10/31</div>
+        <div id="teams" class="content active">
             <div class="card">
                 <h3>المجموعة 1</h3>
                 <p>Souki</p>
@@ -238,8 +215,8 @@
                 <h3>المجموعة 2</h3>
                 <p>Chouaib</p>
                 <p>Minou</p>
-                <p>Mohamed</p>
-                <p>Lbyda</p>
+                <p>Moncef</p>
+                <p>L3tcha</p>
             </div>
         </div>
         <div id="rules" class="content">
@@ -293,7 +270,7 @@
             </div>
             <div class="card">
                 <h3>الملابس</h3>
-                <p>قمصان(ليس شرط ان يكون موحد)، شورتات، جوارب</p>
+                <p>قمصان موحدة، شورتات، جوارب</p>
             </div>
             <div class="card">
                 <h3>واقيات الساق</h3>
